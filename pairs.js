@@ -21,15 +21,14 @@
 function pairs(names) {
   let pairs = [];
   pairs.push(names[0]);
-  for (let i = 1; i < names.length; i++) {
+  for (let i = 1; i < names.length; ) {
     let random = names.getRandom();
     let random2 = names.getRandom();
 
-    let y = [random2, random];
+    let random_var = [random2, random];
 
-    pairs.push(y);
+    pairs.push(random_var);
   }
-
   return pairs;
 }
 
