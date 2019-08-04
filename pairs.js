@@ -20,8 +20,8 @@
 
 function pairs(names) {
   let pairs = [];
-  pairs.push(names[0]);
-  for (let i = 1; i < names.length; ) {
+  pairs.push(names.getRandom());
+  for (let i = 0; i < names.length; ) {
     let random = names.getRandom();
     let random2 = names.getRandom();
 
